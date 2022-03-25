@@ -12,11 +12,9 @@ import Popup from 'reactjs-popup';
 function QuickView({id, trigger} : { id: number, trigger: boolean}) {
 
     const [movie, setMovie] = useState<any>([]);
-    //const [background, setBackground] = useState([]);
 
-    const API_KEY = '4b343760090f222db0ede1a51c7305c4';
 
-    let fetchUrl = `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=en-US`;
+    let fetchUrl = `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`;
 
     useEffect(() => {
         async function fecthData() {
