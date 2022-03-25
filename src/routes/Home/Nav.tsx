@@ -16,9 +16,6 @@ function Nav(){
             else handleShow(false);
         });
 
-        // return () => {
-        //     //  window.removeEventListener('scroll', show);
-        // }
     }, [])
 
     return(
