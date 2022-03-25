@@ -12,9 +12,9 @@ import Who from './routes/Who/Who';
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-        <Route path="/" element={<App />} />
+      <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        
         <Route path='/MyList' element= {<Login />} />
         <Route path='/banner' element= {<Banner />} />
         <Route path='/Who' element= {<Who />} />
